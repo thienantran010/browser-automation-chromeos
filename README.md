@@ -3,7 +3,7 @@
 ## Preface
 This document was never supposed to exist. I had originally wanted to try web scraping using Selenium on my Chromebook (I activated the Linux development environment), but to my surprise, setting up Selenium, Chrome, and Firefox took 3 days. This is partly due to my inexperience, but also because there isn't a good, up-to-date guide on how to get Selenium working with Chrome and Firefox on ChromeOS. While people on Windows, Linus, and MacOS were able to stand on the shoulder of giants (they have hella resources), I had to stand on the ground.
 
-Matt Gosden articulated this issue perfectly in his [article](https://medium.com/swlh/is-a-chromebook-good-for-coding-and-data-science-322babcd5512)
+Matt Gosden articulated this issue perfectly in his [article](https://medium.com/swlh/is-a-chromebook-good-for-coding-and-data-science-322babcd5512):
 
 >Installing what you need to use Python or a similar language is a bit of a daunting task for a beginner on any system. In Chrome OS is particularly tricky >for beginners because it’s not so well documented or supported.
 >
