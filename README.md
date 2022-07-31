@@ -30,7 +30,7 @@ To automate FireFox, follow these steps:
    - PATH is a variable that holds the directories the computer will look through for executable files. Executable files include geckodriver and FireFox.
    - You can check what directories are in the PATH by running `echo $PATH`. echo prints stuff and $PATH is just calling the variable PATH. Each directory is separated by a colon (:) and will appear underlined when you hover over it (if it exists)
    - To add geckodriver to the PATH, move Geckodriver to any of the directories in the path or add the directory that Geckodriver (the project directory) is in to the PATH
-     - To move geckodriver to a directory in the PATH, run `mv geckodriver /usr/local/bin` but replace /usr/local/bin with a directory in the PATH (/usr/local/bin could already be in the PATH)
+     - To move geckodriver to a directory in the PATH, run `mv geckodriver /usr/local/bin` but replace `/usr/local/bin` with a directory in the PATH (`/usr/local/bin` could already be in the PATH)
      - To add the current directory to the PATH, run `export PATH="$PATH:$HOME/path/to/current/directory/from/HOME`. HOME is a variable that holds the path to the HOME directory, so in my case, it's `/home/ttran`.
 5. Download Firefox for Linux.
    - I'm not sure if you can do this in the VSCode Terminal, so I just used the terminal given when I activated Linux Development Environment.
@@ -43,7 +43,8 @@ To automate FireFox, follow these steps:
 7. Run `pip install selenium` to install Selenium.
 8. Test if the installations worked.
    - Run the following code:
-   `from selenium import webdriver
+   ```
+   from selenium import webdriver
 
-    driver = webdriver.Firefox()`
-   - Firefox should pop up!
+   driver = webdriver.Firefox()
+   ```
