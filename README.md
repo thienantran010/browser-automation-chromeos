@@ -13,6 +13,9 @@ This chicken-and-egg problem can have serious consequences, one of which is that
 
 I hope that this document can spare someone the hours I spent on getting Selenium to work with Chrome and Firefox. And if you're feeling bitter, take comfort in the fact that it only gets better from here. Coding is super fun. And maybe one day, you can help contribute your own discoveries. Be the giant you want to see in the world :)
 
+## Requirements
+This document assumes that you have activated the Linux Development Environment, installed VSCode editor, and installed Python and pip (pip should come installed with Python)
+
 ## FireFox Automation
 To automate FireFox, follow these steps:
 
@@ -82,3 +85,19 @@ To automate Chrome, follow these steps:
    from selenium import webdriver
    driver = webdriver.Chrome()
    ```
+## Persistent PATH
+The directories you added to PATH will disappear whenever you exit the session/editor (basically whenever you X out of VSCode). To add the directories to PATH permanently, we will edit the the .bashrc file. You can achieve the same effect by editing the bash_profile file or profile file. You can read more [here](https://stackabuse.com/how-to-permanently-set-path-in-linux/)
+
+1. Run `vim + ~/.bashrc`
+   - This opens bashrc file in vim, a command line text editor
+2. Type the letter 'o' to enter read-only mode.
+3. Use the arrow keys (down arrow specifically) to move to the bottom of the file --- the last line.
+4. Type the letter 'o' to enter insert mode.
+5. Press shift-enter to make a new line and type `export PATH="$PATH:/paths/you/want/included"`
+   - We keep the old PATH variable and add to it in case anything depends on the other paths
+6. Press esc to leave insert mode.
+7. Type `:wq` to save and exit.
+8. You can test if the PATH persists by closing out of the editor and opening it.
+
+## Other Things To Know
+1. To move Linux files, you have to go to Files and Linux Files. You can't drag and drop into the VSCode editor.
