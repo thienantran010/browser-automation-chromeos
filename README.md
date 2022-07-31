@@ -9,7 +9,7 @@ Matt Gosden articulated this issue perfectly in his [article](https://medium.com
 >
 >There is a chicken-and-egg problem here in that there are few developers using Chromebooks for development today and therefore there are fewer tools and >how-to guides to help new coders with the issues and installs.
 
-This chicken-and-egg problem can have serious consequences, one of which is that it can make learning to code discouraging for people without much money (this is just my reasoning I have no statistics to back me up lol). If you don't have a lot of money like me, Chromebooks are super attractive because they're cheaper than other laptops but they're still robust. So you get a Chromebook, happy with your purchase, only to hit a wall with installations that should be simple. You're not even coding yet but you're still having so much trouble. It feels awful, and exhausting if you spent hours finding a solution like me. It might even turn you away from coding.
+This chicken-and-egg problem can have serious consequences, one of which is that it puts another barrier between a person and the start of their coding journey. How can a beginner learn to code when they can't even get set up? Coding should be accessible to all, not just those who can afford laptops that run Windows, MacOS, Linus (although I'm pretty sure there are affordable options available).
 
 I hope that this document can spare someone the hours I spent on getting Selenium to work with Chrome and Firefox. And if you're feeling bitter, take comfort in the fact that it only gets better from here. Coding is super fun. And maybe one day, you can help contribute your own discoveries. Be the giant you want to see in the world :)
 
