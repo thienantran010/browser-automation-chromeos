@@ -48,3 +48,4 @@ To automate FireFox, follow these steps:
 
    driver = webdriver.Firefox()
    ```
+   -Firefox should pop up!
