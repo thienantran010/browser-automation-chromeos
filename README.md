@@ -72,9 +72,11 @@ To automate Chrome, follow these steps:
    - You need to get the Linux version because that's the one the Linux container can access (the Google Chrome that came with ChromeOS won't work)
    - Download at the [official website](https://www.google.com/chrome/downloads/?platform=linux)
 5. Add Google Chrome to the PATH.
-   - Google Chrome should be in /usr/bin, so add this to the path by running `export PATH="$PATH:/usr/bin"`
+   - Google Chrome should be in /usr/bin, so add this to the path by running `export PATH="$PATH:/usr/bin"` if /usr/bin isn't in the PATH
    - You can check where Google Chrome is by running `whereis google-chrome`
-6. Test if the installation worked.
+6. Install selenium.
+   - Run `pip install selenium`
+8. Test if the installation worked.
    - Run the following code. Google Chrome should pop up.
    ```
    from selenium import webdriver
