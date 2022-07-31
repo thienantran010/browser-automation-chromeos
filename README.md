@@ -33,6 +33,7 @@ To automate FireFox, follow these steps:
      - To move geckodriver to a directory in the PATH, run `mv geckodriver /usr/local/bin` but replace `/usr/local/bin` with a directory in the PATH (`/usr/local/bin` could already be in the PATH)
      - To add the current directory to the PATH, run `export PATH="$PATH:$HOME/path/to/current/directory/from/HOME`. HOME is a variable that holds the path to the HOME directory, so in my case, it's `/home/ttran`.
 5. Download Firefox for Linux.
+   - You need to get the Linux version because that's the one the Linux container can access.
    - I'm not sure if you can do this in the VSCode Terminal, so I just used the terminal given when I activated Linux Development Environment.
    - Get the FireFox installer at the offical [website](https://www.mozilla.org/en-US/firefox/linux/). The installer should be in Downloads.
    - Follow the directions in this [article](https://support.mozilla.org/en-US/kb/install-firefox-linux)
@@ -49,3 +50,33 @@ To automate FireFox, follow these steps:
    driver = webdriver.Firefox()
    ```
    -Firefox should pop up!
+
+## Chrome Automation
+To automate Chrome, follow these steps:
+
+1. Create your project directory and set up a virtual environment.
+   - This can be done by running `python3 -m venv venv`
+   - You should see a folder in your project directory called venv
+   - This isn't necessary to automating FireFox but it keeps your libraries organized. You can read more about virtual environments at [RealPython](https://realpython.com/python-virtual-environments-a-primer/)
+2. Download chromedriver and move it to your project directory
+   - Download at [Chromium website](https://chromedriver.chromium.org/downloads)
+   - Should be in Downloads
+3. Add chromedriver to your PATH.
+   - To do this, we will have to use a little bit of Bash. We won't need to know much, but if you're interested, here's a [Bash cheatsheet](https://devhints.io/bash)
+   - PATH is a variable that holds the directories the computer will look through for executable files. Executable files include chromedriver and Google Chrome.
+   - You can check what directories are in the PATH by running `echo $PATH`. echo prints stuff and $PATH is just calling the variable PATH. Each directory is separated by a colon (:) and will appear underlined when you hover over it (if it exists)
+   - To add chromedriver to the PATH, move chromedriver to any of the directories in the path or add the directory that chromedriver (the project directory) is in to the PATH
+     - To move chromedriver to a directory in the PATH, run `mv chromedriver /usr/local/bin` but replace `/usr/local/bin` with a directory in the PATH (`/usr/local/bin` could already be in the PATH)
+     - To add the current directory to the PATH, run `export PATH="$PATH:$HOME/path/to/current/directory/from/HOME`. HOME is a variable that holds the path to the HOME directory, so in my case, it's `/home/ttran`.
+4. Download Google Chrome for Linux.
+   - You need to get the Linux version because that's the one the Linux container can access (the Google Chrome that came with ChromeOS won't work)
+   - Download at the [official website](https://www.google.com/chrome/downloads/?platform=linux)
+5. Add Google Chrome to the PATH.
+   - Google Chrome should be in /usr/bin, so add this to the path by running `export PATH="$PATH:/usr/bin"`
+   - You can check where Google Chrome is by running `whereis google-chrome`
+6. Test if the installation worked.
+   - Run the following code. Google Chrome should pop up.
+   ```
+   from selenium import webdriver
+   driver = webdriver.Chrome()
+   ```
