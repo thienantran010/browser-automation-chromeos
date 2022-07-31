@@ -99,7 +99,9 @@ The directories you added to PATH will disappear whenever you exit the session/e
    - We keep the old PATH variable and add to it in case anything depends on the other paths
 6. Press esc to leave insert mode.
 7. Type `:wq` to save and exit.
-8. You can test if the PATH persists by closing out of the editor and opening it.
+8. Run `source ~/.bashrc` to set the new PATH
+9. You can test if the PATH persists by closing out of the editor and opening it.
+10. Note that this PATH is the PATH for all sessions in the code editor. I couldn't figure out how to make a PATH specific to a directory
 
 ## Other Things To Know
 1. To move Linux files, you have to go to Files and Linux Files. You can't drag and drop into the VSCode editor.
